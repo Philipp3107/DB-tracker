@@ -9,11 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("DB-tacker")
-                .monospaced()
-        }.frame(width: 400, height: 600)
-        .padding()
+       
+        
+            ZStack{
+                 Color("DB_RED")
+                VStack {
+                    Text("DB-tacker")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("DB_WHITE"))
+                        .monospaced()
+                    Spacer()
+                }.frame(width: 400, height: 600)
+                    .padding(.vertical, 10)
+            }
     }
 }
 
